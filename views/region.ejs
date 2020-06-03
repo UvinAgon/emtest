@@ -1,0 +1,36 @@
+<%- include('header'); -%>
+
+<!-- <div>
+  <div>
+    <p><%= regionName.regionName %></p>
+    <p><%= regionName.taskName %>\n<%= regionName.timeAllocated %></p>
+  </div>
+</div> -->
+
+
+<div class="container mt-5">
+  <div class="stagearea card mt-2 mb-2">
+    <h1 class="card-title ml-3" style="font-size: 30px;"><%= regionName.regionName %></h1>
+    <div class="card-body" style="'Times New Roman', Times, serif;">
+      <h2 style="font-size: 20px;"><%= regionName.taskName %></h2>
+      <p class="card-text" style="font-size: 14px;">
+        Description &emsp;&emsp;&nbsp;&nbsp;: <%= regionName.description %><br>
+        Priority &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;: <%= regionName.priority %><br>
+        Sub-tasks &emsp;&emsp;&emsp;&nbsp;: <%= regionName.subTasks %><br>
+        Allocated Time &emsp;: <%= regionName.allocatedTime %><br>
+        Remaining Time &nbsp;&nbsp;: <%= regionName.remainingTime %><br>
+        Status &emsp;&emsp;&emsp;&emsp;&emsp;: <%= regionName.status %><br>
+        <!-- Labels : <%= regionName.label %><br> -->
+      </p>
+      <p class="card-text">
+        Some quick example text to build on the card title
+        and make up the bulk of the card's content.
+      </p>
+      <button class="btn btn-primary" type="submit" name="submit">Add task</button>
+      <button class="btn btn-primary" type="submit" name="submit">View All</button>
+    </div>
+  </div>
+</div>
+<!--Blue #146bf7 -->
+
+<%- include('footer'); -%>

@@ -1,0 +1,99 @@
+/* begining of Navigation CSS */    /*UPDATED*/
+.body{
+	margin: 0;
+	padding: 0;
+	height: 60px;
+	width: 100%;
+	background-color: gray;
+	background-image: url("https://c4.wallpaperflare.com/wallpaper/563/761/292/images-of-tokyo-japan-anime-city-tokyo-tokyo-japan-city-wallpaper-preview.jpg");
+}
+body{
+	/* background-image: url("https://c4.wallpaperflare.com/wallpaper/563/761/292/images-of-tokyo-japan-anime-city-tokyo-tokyo-japan-city-wallpaper-preview.jpg"); */
+	background-image:url("F:/Documents Luas/Udemy/Lu Dev/Eisenhower/images/tokyo.jpg"); 
+
+}
+.NaviSection{
+	width: 100%;
+	/* height: 20px;
+	background-image: url("C:/Users/UVIN/Documents/Angular/easy-travel/Images/imgRegister.jpg");  */
+}
+.NavigationBar{
+	margin-top: 10px;
+	margin-left: 100px;
+	width: 1240px;
+	position: absolute;
+	background: transparent;
+}
+.navUL{
+	margin : 0px;
+	padding: 0px;
+	list-style: none;
+}
+.navUL .navLi {
+	float: left;
+	width: 200px;
+	height: 40px;
+	border: 1px transparent;
+	background-color: black;
+	line-height: 40px;
+	text-align: center;
+	opacity: 0.85;
+	margin-right: 2px;
+}
+.navUL .navLi a{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+.navUL .navLi a:hover{
+	background-color: blue;
+}
+.navUL .navLi .navUL .navLi{
+	display: none;
+	background-color: black;
+}
+.navUL .navLi:hover .navUL .navLi{
+	background-color: black;
+	display: block;
+}
+/* end of Navigation CSS */    /*UPDATED*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stagearea{
+  width: 20%;
+  margin-left: 100px;
+  min-height: 200px;
+  width: 300px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #A683E3;
+}
+
+
+
+
+
+
+
+
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}

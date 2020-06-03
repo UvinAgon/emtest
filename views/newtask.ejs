@@ -1,0 +1,87 @@
+<%- include('header'); -%>
+
+<div style="background-color: #464e54;">
+  <div style="height: 40px;"></div>
+
+  <div class="container rounded" style="width: 750px; background-color: #363c40; color: #ffffff;">
+    <div class="heading">
+      <h1 class="d-flex justify-content-center" style="font: piedra">Add New Task</h1>
+    </div>
+
+    <form action="/add" method="post">
+
+      <div class="d-flex flex-row" style="">
+        <div class="" style="width: 500px; margin-right: 10px;">
+          <div class="form-group">
+            <label for="inputTaskName" style="color: #ffffff;">Task Name</label>
+            <input type="text" name="taskName" id="inputTaskName" class="form-control" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="inputTaskName" style="color: #ffffff;">Description</label>
+            <!-- <input type="text" class="form-control" id="inputDescription" aria-describedby="description"> -->
+            <textarea name="description" id="inputDescription" rows="3" class="form-control"></textarea>
+            <!-- <small id="description" class="form-text text-muted">Describe basic idea briefly</small> -->
+          </div>
+          <div class="form-group">
+            <label for="inputSubTaskName" style="color: #ffffff;">Sub-Tasks</label>
+            <input type="text" name="subTasks" id="inputSubTaskName" class="form-control" aria-describedby="emailHelp" placeholder="Only if available...">
+          </div>
+          <div class="form-group">
+            <label for="inputLabel" style="color: #ffffff;">Labels</label>
+            <div class="d-flex flex-row">
+              <input type="text" name="label" id="inputLabel" class="form-control" placeholder="Add a label">
+              <button class="form-control" style="width: 40px; height: 38px;" type="button" name="addLabel">+</button>
+            </div>
+            <div class="d-flex flex-row">
+              <input type="text" name="addedLabels" id="inputAddedLabels" class="form-control" placeholder="Added labels" disabled="true">
+            </div>
+          </div>
+        </div>
+
+        <div class="" style="width: 250px; margin-left: 10px;">
+          <div class="form-group">
+            <label for="inputAT" style="color: #ffffff;">Time Allocate</label>
+            <input type="text" name="timeAllocated" id="inputAT" class="form-control" placeholder="ex: 1w 2d 4h 30m">
+          </div>
+          <div class="form-group">
+            <label for="inputTR" style="color: #ffffff;">Time Remaining</label>
+            <input type="text" name="timeRemaining" id="inputTR" class="form-control" placeholder="ex: 1w 2d 4h 30m">
+          </div>
+          <div class="form-group">
+            <label for="inputPriority" style="color: #ffffff;">Priority</label>
+            <input type="number" name="priority" id="inputPriority" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="inputStatus" style="color: #ffffff;">Status</label>
+            <select name="status" id="inputStatus" class="form-control">
+              <option>Pending</option>
+              <option>Investigated</option>
+              <option>In-progress</option>
+              <option>Done</option>
+              <option>Recreate</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="inputRegion" style="color: #ffffff;">Region</label>
+            <select name="regionName" id="inputRegion" class="form-control">
+              <option value="nullRegion">--Default--</option>
+              <option>Do</option>
+              <option>Schedule</option>
+              <option>Delegate</option>
+              <option>Eliminate</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center"">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+
+    <div style="height: 10px;"></div>
+
+  </div>
+  <div style="height: 70px;"></div>
+</div>
+
+<%- include('footer'); -%>

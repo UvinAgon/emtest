@@ -212,6 +212,7 @@ app.get("/task/:id", function(req, res){
 });
 // insert
 app.post("/task",function(req,res){
+  console.log(req);
   const regionNameBody = req.body.regionName;
   console.log(req.body);
   const taskNameBody = req.body.taskName;
